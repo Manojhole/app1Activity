@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GraphicalPassword</string>
+    <string name="app_name1">Test App1</string>
+    <string name="app_name2">Test App2</string>
+    <string name="app_name3">Test App3</string>
+    <string-array name="cat">
+        <item>Flowers</item>
+        <item>Fruits</item>
+        <item>Smileys</item>
+    </string-array>
+
+    <string name="title_activity_launcher">LauncherActivity</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Login"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="monospace"
+        android:text="Mobile No: "
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:background="@drawable/etbg"
+        android:padding="10dp"
+        android:id="@+id/al_et_mobile"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLength="10"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your mobile number"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Password: "
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:background="@drawable/etbg"
+        android:padding="10dp"
+        android:id="@+id/al_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:hint="Enter your password"
+        android:maxLength="8"
+        android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/al_tv_fpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right"
+        android:text="Forgot Password ?"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:background="@drawable/btnbg"
+        style="@style/btnStyle"
+        android:id="@+id/al_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Login"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/al_tv_msg"/>
+
+    <TextView
+        android:id="@+id/al_tv_newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right"
+        android:text="New User? Signup"
+        android:textColor="@color/colorPrimaryDark" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fayaz.graphicalpassword"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="com.example"
+    >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gpw"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gpw"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FlashActivity"
+            android:theme="@style/FlashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".LockScreenActivity"
+            android:theme="@style/AppTheme3" >
+
+        </activity>
+        <activity android:name=".SetGraphicalPasswordActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ForgotPActivity" />
+        <activity android:name=".LockActivity"  android:theme="@style/FlashTheme"/>
+        <activity android:name=".AppListActivity" />
+        <activity android:name=".App1Activity" android:label="App 1" android:theme="@style/AppTheme1" />
+        <activity android:name=".App2Activity" android:label="App 2" android:theme="@style/AppTheme2" />
+        <activity android:name=".App3Activity" android:label="App 3" android:theme="@style/AppTheme3" />
+
+    </application>
+
+</manifest>
